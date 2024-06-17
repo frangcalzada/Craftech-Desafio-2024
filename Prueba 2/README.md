@@ -17,37 +17,10 @@ Para esta prueba utilice Windows 11 como Sistema Operativo por lo tanto:
             "syntax error: unexpected end of file (expecting "do")"
   Este error esta relacionado a un problema de formato en el archivo, para solucionarlo hay que hacer lo siguiente:
   
-  1) Reemplazar "entrypoint.sh" por el siguiente:
-     ``` #!/bin/sh
 
-if [ "$DATABASE" = "postgres" ]; then
-    echo "Waiting for postgres..."
-
-    while ! nc -z $SQL_HOST $SQL_PORT; do
-      sleep 0.1
-    done
-
-    echo "PostgreSQL started"
-fi
-
-# Uncomment below to flush db e.g. after running tests
-# Just make sure you really mean it 
-# python manage.py flush --no-input
-
-# We have base custom user model so need to makemigrations out of box
-
-python manage.py makemigrations core
-python manage.py flush --no-input
-python manage.py migrate
-python manage.py loaddata initial_data.json
-# python manage.py collectstatic --noinput
-python manage.py runserver 0.0.0.0:8000
-
-exec "$@" ```
-
-2) Asegurarnos de que el archivo tenga permisos de ejecución:
+1) Asegurarnos de que el archivo tenga permisos de ejecución:
    `` chmod +x backend/entrypoint.sh ``
 
-3) Tirar este comando para convertir los saltos de linea:
+2) Tirar este comando para convertir los saltos de linea:
    `` dos2unix backend/entrypoint.sh ``
   
