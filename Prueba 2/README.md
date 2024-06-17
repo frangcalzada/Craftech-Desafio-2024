@@ -21,7 +21,13 @@ Si todo compila correctamente debe poder verse esta web:
 * Utilizo Docker Compose para orquestar los contenedores de backend y frontend ya que facilita la gestión y el despliegue de los servicios. En este
 caso en particular ya estaba casi todo armado, fue solamente necesario unir todo en un solo docker-compose.yml.
 * Con respecto a los volúmenes para la persistencia de datos se utiliza un PostgresSQL.
-* 
+* Dentro de .env defino las variables de entorno para la aplicación Django. Dentro de .env.postgres defino las variables de entorno específicas para la BD de PostgresSQL. De esta manera
+puedo configurar entornos específicos como la BD y configuraciones de Django sin necesitadad de modificar el código fuente.
+* El archivo Dockerfile es el que define como se va a construir la imágen Docker, existe una para el backend y otra para frontend.
+* El archivo Docker-Compose.yml es el que define como se ejecutarán los servicios relacionados con Docker. Me permite orquestar los contenedores en una configuración única.
+* El entrypoint.sh es un script que lo utilizo para la inicialización del contenedor Django, esperando a que la BD PostgresSQL este disponible antes de ejecutar las migraciones y
+cargar datos iniciales.
+* NO utilizo Kubernetes ya que tuve inconvenientes con Docker Hub.
 
 
 # Información Adicional
@@ -47,3 +53,4 @@ Para esta prueba utilice Windows 11 como Sistema Operativo por lo tanto:
    `` dos2unix backend/entrypoint.sh ``
   
 * Es importante revisar que los puertos 8000 y 3000 no esten siendo utilizados. En mi caso estaba teniendo un error ya que el puerto 3000 estaba siendo utilizado por un sitio en mi IIS.
+* En este caso no utilizo Supervisor. Tengo entendido que solo esta disponible para entornos Unix.
