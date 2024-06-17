@@ -21,7 +21,7 @@ Subir todo lo elaborado a un repositorio (github, gitlab, bitbucket, etc). En el
 con instrucciones detalladas para compilar y desplegar la aplicación, tanto en una PC local como en la nube (AWS o GCP).
 
 
-# Prueba 3 - CI/CD
+# [Prueba 3 - CI/CD](./Prueba%203/index.html)
 
 Dockerizar un nginx con el index.html default. Elaborar un pipeline que ante cada cambio realizado sobre el index.html buildee
 la nueva imagen y la actualize en la plataforma elegida. (docker-compose, swarm, kuberenetes, etc.) Para la creacion del CI/CD se puede utilizar cualquier
