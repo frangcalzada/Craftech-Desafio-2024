@@ -1,5 +1,3 @@
-# Prueba-Tecnica-Craftech
-
 # Prueba 1 - Diagrama de Red
 
 Produzca un diagrama de red (puede utilizar lucidchart) de una aplicación web en GCP o AWS y escriba una descripción de
