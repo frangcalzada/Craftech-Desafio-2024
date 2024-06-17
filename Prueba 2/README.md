@@ -27,7 +27,6 @@ puedo configurar entornos específicos como la BD y configuraciones de Django si
 * El archivo Docker-Compose.yml es el que define como se ejecutarán los servicios relacionados con Docker. Me permite orquestar los contenedores en una configuración única.
 * El entrypoint.sh es un script que lo utilizo para la inicialización del contenedor Django, esperando a que la BD PostgresSQL este disponible antes de ejecutar las migraciones y
 cargar datos iniciales.
-* NO utilizo Kubernetes ya que tuve inconvenientes con Docker Hub.
 
 
 # Información Adicional
