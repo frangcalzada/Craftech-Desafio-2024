@@ -17,6 +17,12 @@ con instrucciones detalladas para compilar y desplegar la aplicación, tanto en 
 Si todo compila correctamente debe poder verse esta web:
 ![image](https://github.com/frangcalzada/Craftech-Desafio-2024/assets/40276177/c024bad0-c990-4ba2-95a9-21e9a18ee069)
 
+# Justificacióon de la metodología:
+* Utilizo Docker Compose para orquestar los contenedores de backend y frontend ya que facilita la gestión y el despliegue de los servicios. En este
+caso en particular ya estaba casi todo armado, fue solamente necesario unir todo en un solo docker-compose.yml.
+* Con respecto a los volúmenes para la persistencia de datos se utiliza un PostgresSQL.
+* 
+
 
 # Información Adicional
 Los binarios del Frontend y del Backend son originarios de: https://github.com/craftech-inc/devops-interview-ultimate
