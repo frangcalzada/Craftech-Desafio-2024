@@ -3,10 +3,10 @@ name: CI/CD Pipeline
 on:
   push:
     branches:
-      - main  # Cambia si estás usando una rama diferente
+      - main
   pull_request:
     branches:
-      - main  # Cambia si estás usando una rama diferente
+      - main
 
 jobs:
   build:
