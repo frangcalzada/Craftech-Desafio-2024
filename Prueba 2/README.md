@@ -13,6 +13,10 @@ con instrucciones detalladas para compilar y desplegar la aplicación, tanto en 
 4) Acceder a la aplicación:
    * Backend (Django): http://localhost:8000
    * Frontend (React.js): http://localhost:3000
+     
+Si todo compila correctamente debe poder verse esta web:
+![image](https://github.com/frangcalzada/Craftech-Desafio-2024/assets/40276177/c024bad0-c990-4ba2-95a9-21e9a18ee069)
+
 
 # Información Adicional
 Los binarios del Frontend y del Backend son originarios de: https://github.com/craftech-inc/devops-interview-ultimate
