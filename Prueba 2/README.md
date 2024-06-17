@@ -5,6 +5,15 @@ Se deben entregar los Dockerfiles pertinentes para elaborar el despliegue y just
 Subir todo lo elaborado a un repositorio (github, gitlab, bitbucket, etc). En el repositorio se debe incluir el código de la aplicación y un archivo README.md
 con instrucciones detalladas para compilar y desplegar la aplicación, tanto en una PC local como en la nube (AWS o GCP).
 
+# Resolución
+1) Utilizando Docker Compose integro el backend y frontend en un solo archivo ``` docker-compose.yml ```. De esta manera me aseguro de que ambos
+   servicios se puedan comunicar entre si. El archivo se encuentra en ``` Craftech-Desafio-2024/Prueba 2/docker-compose.yml ```.
+2) Asegurarse de que ```entrypoint.sh``` tenga permisos de ejecución, puedes hacerlo con: ```  chmod +x backend/entrypoint.sh ```.
+3) Parado sobre: ``` Craftech-Desafio-2024/Prueba 2 ``` ejecutar: ``` docker-compose up --build ```
+4) Acceder a la aplicación:
+   * Backend (Django): http://localhost:8000
+   * Frontend (React.js): http://localhost:3000
+
 # Información Adicional
 Los binarios del Frontend y del Backend son originarios de: https://github.com/craftech-inc/devops-interview-ultimate
 Para esta prueba utilice Windows 11 como Sistema Operativo por lo tanto:
