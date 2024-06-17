@@ -14,13 +14,17 @@ Para esta prueba utilice Windows 11 como Sistema Operativo por lo tanto:
   ![image](https://github.com/frangcalzada/Craftech-Desafio-2024/assets/40276177/28cb040c-2f84-415b-82c6-034ec3972fcf)
   
 * Como estoy utilizando Windows 11 se me presento el siguiente error en el contenedor django:
-            "syntax error: unexpected end of file (expecting "do")"
+* 
+            ```syntax error: unexpected end of file (expecting "do")```
+  
   Este error esta relacionado a un problema de formato en el archivo, para solucionarlo hay que hacer lo siguiente:
   
 
 1) Asegurarnos de que el archivo tenga permisos de ejecución:
+   
    `` chmod +x backend/entrypoint.sh ``
 
-2) Tirar este comando para convertir los saltos de linea:
+3) Tirar este comando para convertir los saltos de linea:
+   
    `` dos2unix backend/entrypoint.sh ``
   
