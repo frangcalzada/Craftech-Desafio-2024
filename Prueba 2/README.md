@@ -36,3 +36,4 @@ Para esta prueba utilice Windows 11 como Sistema Operativo por lo tanto:
    
    `` dos2unix backend/entrypoint.sh ``
   
+* Es importante revisar que los puertos 8000 y 3000 no esten siendo utilizados. En mi caso estaba teniendo un error ya que el puerto 3000 estaba siendo utilizado por un sitio en mi IIS.
