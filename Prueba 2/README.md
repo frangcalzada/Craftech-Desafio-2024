@@ -13,9 +13,8 @@ Para esta prueba utilice Windows 11 como Sistema Operativo por lo tanto:
 * Habilitar Kubernetes. Esto lo podemos hacer desde la misma interfaz de Docker Engine:
   ![image](https://github.com/frangcalzada/Craftech-Desafio-2024/assets/40276177/28cb040c-2f84-415b-82c6-034ec3972fcf)
   
-* Como estoy utilizando Windows 11 se me presento el siguiente error en el contenedor django:
-* 
-            ```syntax error: unexpected end of file (expecting "do")```
+* Como estoy utilizando Windows 11 se me presento el siguiente error en el contenedor django: 
+            `` syntax error: unexpected end of file (expecting "do") ``
   
   Este error esta relacionado a un problema de formato en el archivo, para solucionarlo hay que hacer lo siguiente:
   
