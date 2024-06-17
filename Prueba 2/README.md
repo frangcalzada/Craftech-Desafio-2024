@@ -18,7 +18,7 @@ Para esta prueba utilice Windows 11 como Sistema Operativo por lo tanto:
   Este error esta relacionado a un problema de formato en el archivo, para solucionarlo hay que hacer lo siguiente:
   
   1) Reemplazar "entrypoint.sh" por el siguiente:
-     ``#!/bin/sh
+     ``` #!/bin/sh
 
 if [ "$DATABASE" = "postgres" ]; then
     echo "Waiting for postgres..."
@@ -43,7 +43,7 @@ python manage.py loaddata initial_data.json
 # python manage.py collectstatic --noinput
 python manage.py runserver 0.0.0.0:8000
 
-exec "$@" ``
+exec "$@" ```
 
 2) Asegurarnos de que el archivo tenga permisos de ejecución:
    `` chmod +x backend/entrypoint.sh ``
