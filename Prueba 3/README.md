@@ -29,6 +29,6 @@ plataforma (CircleCI, Gitlab, Github, Bitbucket.)
 Dejo una captura de los Workflows en Actions donde se puede ver que cuando un cambio sobre index.html se hace un nuevo build.
 ![image](https://github.com/frangcalzada/Craftech-Desafio-2024/assets/40276177/7ed68c0b-3b66-4296-aa35-99852c84711b)
 ![image](https://github.com/frangcalzada/Craftech-Desafio-2024/assets/40276177/3031266e-d1a8-49a7-a740-30365c9e8eb5)
-
+3) La idea principal era hacer el deploy en Heroku pero me pide una tarjeta de credito, al parecer es de pago, es por eso que termine haciendo todo en Github.
 
    
