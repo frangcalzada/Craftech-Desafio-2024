@@ -53,3 +53,10 @@ Para esta prueba utilice Windows 11 como Sistema Operativo por lo tanto:
   
 * Es importante revisar que los puertos 8000 y 3000 no esten siendo utilizados. En mi caso estaba teniendo un error ya que el puerto 3000 estaba siendo utilizado por un sitio en mi IIS.
 * En este caso no utilizo Supervisor. Tengo entendido que solo esta disponible para entornos Unix.
+
+# Desplegar aplicación en AWS
+
+Por lo que pude investigar para desplegar la aplicación en AWS se debe hacer en una instancia de EC2. Pude crearme una cuenta en AWS, configurar la CLI y configurar la instancia de EC2.
+![image](https://github.com/frangcalzada/Craftech-Desafio-2024/assets/40276177/81d8bfdb-0cec-4630-8ffb-023a7fa3bee5)
+Pero a partir de ahi se me complico poder acceder a la instancia y realizar el resto, por una cuestion de tiempo decidí terminar con los otros puntos.
+
